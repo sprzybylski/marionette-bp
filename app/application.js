@@ -1,3 +1,5 @@
 define(['marionette'], function (Marionette) {
-    return new Marionette.Application();
+    var Application = new Marionette.Application();
+
+    return Application;
 });

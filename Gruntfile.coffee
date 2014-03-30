@@ -12,8 +12,9 @@ module.exports = (grunt) ->
                     base: config.app
                     port: 8080
                     keepalive: true
+        karma:
+            unit:
+                configFile: 'karma.conf.coffee'
 
 
     loadGruntTasks grunt
-
-    grunt.registerTask "default", ["uglify"]
