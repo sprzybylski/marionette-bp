@@ -1,13 +1,38 @@
 <!doctype html>
 <html class="no-js">
 <head>
+    <title>Marionette</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Marionette</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Marionette boilerplate</h1>
+        </div>
+        <div class="row">
+            <div id="left" class="jumbotron col-md-5"></div>
+            <div class="col-md-2"></div>
+            <div id="right" class="jumbotron col-md-5"></div>
+        </div>
+        <div id="main" class="jumbotron"></div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.js"></script>
     <script data-main="main" src="bower_components/requirejs/require.js"></script>
+    <script id="view-template" type="text/html">
+        <form role="form">
+            <div class="form-group">
+                <input type="text" class="form-control">
+            </div>
+        </form>
+    </script>
+    <script id="main-template" type="text/html">
+        <p><%= leftText %></p>
+        <p><%= rightText %></p>
+    </script>
 </body>
 </html>

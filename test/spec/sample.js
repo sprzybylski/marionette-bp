@@ -2,7 +2,7 @@ define(
     [
         'application'
     ],
-    function (app) {
+    function () {
         'use strict';
 
         describe('Give it some context', function () {
