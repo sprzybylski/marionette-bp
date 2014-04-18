@@ -1,7 +1,7 @@
 define(
     [
         'marionette',
-        'models/model'
+        'models/Model'
     ],
     function (Marionette, Model) {
         return Marionette.ItemView.extend({
