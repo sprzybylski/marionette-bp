@@ -15,25 +15,7 @@ require.config({
     baseUrl: '/base/app',
     deps: allTestFiles,
     paths: {
-        'test/spec': '../test/spec',
-        backbone: 'bower_components/backbone/backbone',
-        underscore: 'bower_components/underscore/underscore',
-        jquery: 'bower_components/jquery/dist/jquery',
-        marionette: 'bower_components/marionette/lib/core/amd/backbone.marionette',
-        'backbone.wreqr': 'bower_components/backbone.wreqr/lib/amd/backbone.wreqr',
-        'backbone.babysitter' : 'bower_components/backbone.babysitter/lib/amd/backbone.babysitter'
-    },
-    shim: {
-        jquery: {
-            exports: 'jQuery'
-        },
-        underscore: {
-            exports: '_'
-        },
-        backbone: {
-            deps: ['jquery', 'underscore'],
-            exports: 'Backbone'
-        }
+        'test/spec': '../test/spec'
     },
     callback: window.__karma__.start
 });
